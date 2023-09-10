@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
-
 @Service
 public class RegisterService {
     private UserRepository userRepository;
@@ -38,7 +37,5 @@ public class RegisterService {
         userRepository.save(user);
         authorityRepository.save(new Authority(user.getUsername(), role.name()));
     }
-
-
 }
 

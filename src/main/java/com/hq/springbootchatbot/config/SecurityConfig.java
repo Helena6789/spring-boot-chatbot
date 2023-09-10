@@ -30,6 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/register").permitAll()
                 .antMatchers(HttpMethod.POST, "/authenticate").permitAll()
+                .antMatchers("/chat").hasAuthority("ROLE_NORMAL")
                 .anyRequest().authenticated()
                 .and()
                 .csrf()
