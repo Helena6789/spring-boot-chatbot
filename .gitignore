@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### application properies ###
+src/main/resources/application-dev.properties
+
