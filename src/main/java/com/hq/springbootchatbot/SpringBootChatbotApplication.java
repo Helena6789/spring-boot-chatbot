@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootChatbotApplication {
 
     public static void main(String[] args) {
-        System.setProperty("spring.config.name", "application-dev");
+        System.setProperty("spring.config.name", "application");
         SpringApplication.run(SpringBootChatbotApplication.class, args);
     }
 
